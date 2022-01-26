@@ -1,0 +1,110 @@
+body{
+    background-image: url('Images/BG.jpg');
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.player{
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 15%;
+    height: 400px;
+    width: 300px;
+    border-radius: 2%;
+}
+
+.songPicture{
+    content:url('Images/AlbumArt.png');
+    height: 60%;
+    width: 100%;
+}
+
+#startPauseButton{
+    position: absolute;
+    left: 5%;
+    top: 53%;
+    height: 5%;
+    width: 5%;
+}
+
+.buttonHover:hover{
+    cursor: pointer;
+}
+
+.playButton{
+    content: url('Images/play.png');
+}
+
+.pauseButton{
+    content: url('Images/pause.png');
+}
+
+#timingBarBackground{
+    position: absolute;
+    left: 15%;
+    top: 55%;
+    background-color: rgba(255, 255, 255, 0.404);
+    width: 70%;
+    height: 5px;
+    border-radius: 2%/40%;
+}
+
+.timingBar{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 5px;
+    border-radius: 2%/40%;
+    width: 0;
+}
+
+.movingBar{
+    width: 100%;
+}
+
+#muteButton{
+    position: absolute;
+    left: 90%;
+    top: 53%;
+    height: 5%;
+    width: 5%;
+}
+
+.muteUnpressed{
+    content: url('Images/Mute.png');
+}
+
+.mutePressed{
+    content: url('Images/muteed.png');
+}
+
+.songName{
+    padding: 3% 0 3% 5%;
+    background-color: white;
+    height: 10%;
+}
+
+#singer{
+    font-size: 16px;
+    color: rgb(66, 66, 66);
+}
+
+#songTitle{
+    font-size: 13px;
+    color: rgb(102, 101, 101);
+}
+
+#playList{
+    padding-top: 3%;
+    background-color: rgba(12, 12, 53, 0.5);
+    border-radius: 0 0 5% 5%/0 0 5% 5%;
+}
+
+.song{
+    padding: 5% 5% 5% 8%;
+    font-size: 13px;
+    color:white;
+}
+
+.clickedSong{
+    background-color: rgba(176, 206, 252, 0.801);
+}

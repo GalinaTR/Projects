@@ -1,0 +1,144 @@
+body {
+  background-image: url('images/Layer_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+}
+.hidden {
+  display: none;
+}
+.startGameButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 100px;
+}
+.resumeGameButton {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 800px;
+  height: 100px;
+}
+.startGameButton,
+.resumeGameButton,
+.tryAgainButton,
+.restartGameButton {
+  transform: translate(-50%, -50%);
+  background-color: #ffffffc4;
+  border: 1px solid grey;
+  border-radius: 3% 3% 3% 3% / 25% 25% 25% 25%;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.59);
+}
+.startGameButton span,
+.resumeGameButton span,
+.tryAgainButton span,
+.restartGameButton span {
+  display: inline-block;
+  font-family: 'Verdana';
+  text-transform: uppercase;
+  color: #361157;
+  font-size: 36pt;
+  font-weight: bold;
+  margin-top: 22px;
+}
+.startGameButton:hover,
+.resumeGameButton:hover,
+.tryAgainButton:hover,
+.restartGameButton:hover {
+  cursor: pointer;
+}
+.cardsContainer {
+  margin: auto;
+  margin-top: 4%;
+  width: 1264.47px;
+  height: 800px;
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 1% 1% 1% 1% / 1.5% 1.5% 1.5% 1.5%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.59);
+}
+@keyframes cardOpen {
+  0% {
+    content: url('images/cards/_Hover.png');
+    transform: rotateY(0);
+  }
+  50% {
+    content: url('images/cards/_Hover.png');
+    transform: rotateY(90deg);
+  }
+  51% {
+    content: none;
+    transform: rotateY(-90deg);
+  }
+  100% {
+    content: none;
+    transform: rotateY(0);
+  }
+}
+.cardsGrid {
+  display: grid;
+  position: absolute;
+  grid-template-columns: auto auto auto auto auto auto;
+  margin-left: 32.5px;
+  margin-top: 32.5px;
+}
+.cardsGrid .cardWrapper {
+  width: 135px;
+  height: 180px;
+  margin: 32.5px;
+}
+.card {
+  content: url('images/cards/Card_Back.png');
+}
+.card:hover {
+  cursor: pointer;
+  content: url('images/cards/_Hover.png');
+}
+.cardWrapper:hover .card {
+  animation: cardOpen 0.3s ease-in-out forwards;
+}
+.endContainer {
+  background-color: #ff000048;
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+}
+.tryAgainButton,
+.restartGameButton {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 800px;
+  height: 100px;
+}
+.gameOver span,
+.youWin span {
+  color: red;
+  font-family: 'Verdana';
+  text-transform: uppercase;
+  font-size: 100pt;
+  font-weight: bold;
+  text-shadow: 0 3px 6px #000000;
+}
+.center {
+  position: relative;
+  top: 25%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.finalScore span {
+  color: white;
+  font-family: 'Verdana';
+  font-size: 48pt;
+  font-weight: bold;
+  text-shadow: 0 3px 6px #000000;
+}
+.winnerContainer {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+}

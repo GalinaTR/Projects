@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="header-style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="game hidden" >
+        <div class="scoreBlock"> 
+            <div id="currentScore">Score: 
+                <span id="scoreValue"> 0 </span>
+            </div>
+            <div id="maxScore"> High score: 800</div>
+        </div>
+
+        <div class="timeBar">
+            <div class="timeBarOuter"></div>
+            <div class="timeBarInner barAnimation"></div>
+        </div>
+
+        <div class="resetGame">
+            <img class="resetArrow" src="images/Reset.png"/> 
+        </div>
+
+    </header>
+    
+    <main>
+        <div class="startGameButton">
+            <span>start game</span>
+        </div>
+
+        <div class="resumeGameButton hidden">
+            <span>resume game</span>
+        </div>
+
+        <div class="game cardsContainer hidden">
+            <div class="cardsGrid">
+                <!-- first row -->
+                <div class ="cardWrapper">
+                    <img id="row1card1" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row1card2" class="card"  />
+                </div>         
+                
+                <div class ="cardWrapper">
+                    <img id="row1card3" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row1card4" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row1card5" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row1card6" class="card"  />
+                </div>
+                
+
+                <!-- second row -->
+                <div class ="cardWrapper">
+                    <img id="row2card1" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row2card2" class="card"  />
+                </div>         
+                
+                <div class ="cardWrapper">
+                    <img id="row2card3" class="card" />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row2card4" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row2card5" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row2card6" class="card"  />
+                </div>
+
+
+                <!-- third row -->
+                <div class ="cardWrapper">
+                    <img id="row3card1" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row3card2" class="card"  />
+                </div>         
+                
+                <div class ="cardWrapper">
+                    <img id="row3card3" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row3card4" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row3card5" class="card"  />
+                </div>
+
+                <div class ="cardWrapper">
+                    <img id="row3card6" class="card"   />
+                </div>
+
+            </div>
+        </div>
+
+        <div class="endContainer hidden" >
+            <div class="gameOver center">
+                <span>game over</span>
+            </div>
+            <div class="finalScore center">
+                <span>Final score:</span> 
+                <span class="scoreAmount"></span>
+            </div>
+            <div class="tryAgainButton">
+                <span>tty again</span>
+            </div>
+        </div>
+
+        <div class="winnerContainer hidden" >
+            <div class="youWin center">
+                <span>you win</span>
+            </div>
+            <div class="finalScore center">
+                <span>Final score:</span>
+                <span class="scoreAmount"></span>
+            </div>
+            <div class="restartGameButton">
+                <span>restart game</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

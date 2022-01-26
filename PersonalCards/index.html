@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People contacts</title>
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="MainPageHeader">
+        <h1>People Archive</h1>
+    </header>
+
+    <main class="PageMainContainer">
+        <nav class="MainPageNav">
+            <div class="EditPageButton">
+                <div class="textEdit">Edit</div>
+                <div class="textStop">Stop Editing</div>
+            </div>
+        </nav>
+        <section class="PeopleCardWrapper">
+            <span class="PeopleCardsContainer">
+                No items are added
+            </span>
+        </section>
+        <aside class="EditPeopleWrapper">
+            <div class="TitleInputPair">
+                <label>Name:</label>
+                <input data-key="name" class="EditPeopleInput"/>
+            </div>
+            <div class="TitleInputPair">
+                <label>Job title:</label>
+                <input data-key="job" class="EditPeopleInput"/>
+            </div>
+            <div class="TitleInputPair">
+                <label>E-mail:</label>
+                <input data-key="email" class="EditPeopleInput"/>
+            </div>
+            <div class="TitleInputPair">
+                <label>Phone:</label>
+                <input data-key="phone" class="EditPeopleInput" type="number"/>
+            </div>
+            <button id="AddOnePerson">+ Add person</button>
+        </aside>
+   
+    <template>
+        <div id="cardContainer">
+            <div class="PersonCard">
+                <span class="PersonImage"></span>
+                <div data-key='name' class="PersonName"></div>
+                <div data-key='job' class="personJobTitle"></div>
+                <div data-key='email' class="eMail"></div>
+                <div data-key='phone' class="PersonPhoneNumber"></div>
+            </div>
+            <button class="removeButton" onclick="onClickRemove(event)">Remove</button>
+        </div>
+    </template>
+
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
